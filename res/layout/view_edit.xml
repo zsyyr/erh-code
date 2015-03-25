@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_edit_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0000000"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_edit_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edit"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_edit_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="删除宝贝"
+                android:textColor="#007AFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#DADADE" />
+
+            <Button
+                android:id="@+id/button_edit_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="编辑宝贝"
+                android:textColor="#007AFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_edit_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_edit"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="#007AFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

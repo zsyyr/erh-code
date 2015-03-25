@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_home_page"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_home_page_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_price"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textview_home_page_subject"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textview_home_page_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <GridView
+            android:id="@+id/gridview_home_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:horizontalSpacing="15px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingBottom="25dp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="15dp"
+            android:scrollbars="none"
+            android:verticalSpacing="20dp" >
+        </GridView>
+    </LinearLayout>
+
+    <include layout="@layout/view_frame_loading" />
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="10dp"
+        android:background="#D9D9D9" />
+
+    <EditText
+        android:id="@+id/edittext_edit_nickname"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:hint= "用户名应设为4至15位字符/数字"
+        android:singleLine="true"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="#D9D9D9" />
+
+</LinearLayout>

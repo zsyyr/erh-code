@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titleview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titleview" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fadeScrollbars="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_goods_subject" />
+
+                        <EditText
+                            android:id="@+id/edittext_publish_buying_subject"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:hint="宝贝标题"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1sp"
+                        android:background="#D9D9D9" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="15dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_goods_price" />
+
+                        <EditText
+                            android:id="@+id/edittext_publish_buying_price"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:hint="价        格"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1sp"
+                        android:background="#D9D9D9" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_goods_message" />
+
+                        <EditText
+                            android:id="@+id/edittext_publish_buying_message"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:gravity="top"
+                            android:hint="物品描述"
+                            android:minLines="20"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="3dp"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/button_publish_buying"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8A3FF"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/view_frame_loading" />
+    </FrameLayout>
+
+</RelativeLayout>

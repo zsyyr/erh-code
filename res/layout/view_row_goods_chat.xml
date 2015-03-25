@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout_goods_info_comment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#efefef"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp"
+    android:visibility="invisible" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edittext_goods_info_input"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_input"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_goods_info_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:text="发送"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

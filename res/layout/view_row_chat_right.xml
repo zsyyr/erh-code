@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imagebutton_row_chat"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/imagebutton_row_chat_loading"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@anim/frame_chat"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_row_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chat_right"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imagebutton_row_chat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

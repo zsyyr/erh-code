@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_goods_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollview_goods_info"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/view_row_goods_head" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout_goods_info_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/view_row_goods_bottom" />
+
+                <include layout="@layout/view_row_goods_chat" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <include layout="@layout/view_frame_loading" >
+        </include>
+    </FrameLayout>
+
+</LinearLayout>

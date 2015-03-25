@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="20dp" >
+
+            <ImageButton
+                android:id="@+id/imagebutton_search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/icon_arrow_left" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search_input"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edittext_search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingLeft="16dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/imagebutton_search_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/icon_search_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:background="#D9D9D9" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_search_order_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="时间"
+                android:textColor="@color/text_gray"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#D9D9D9" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_search_order_price"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="价格"
+                    android:textColor="@color/text_gray"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageview_search_order_price_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/icon_arrow_order_up_gray" />
+
+                    <ImageView
+                        android:id="@+id/imageview_search_order_price_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/icon_arrow_order_down_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:background="#D9D9D9" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.yidian_erhuo.pullToRefresh.PullToRefreshListView
+            android:id="@+id/pulltorefresh_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.yidian_erhuo.pullToRefresh.PullToRefreshListView>
+        <include layout="@layout/view_frame_loading" />
+    </FrameLayout>
+
+</LinearLayout>

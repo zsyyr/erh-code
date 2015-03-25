@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="145dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_userinfo" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_userinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageButton
+                    android:id="@+id/imagebutton_userinfo_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textview_userinfo_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagebutton_userinfo_head"
+                    android:layout_centerHorizontal="true"
+                    android:minWidth="80dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#2A2A2A"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageview_userinfo_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textview_userinfo_username"
+                    android:layout_toRightOf="@+id/textview_userinfo_username" />
+
+                <Button
+                    android:id="@+id/button_userinfo_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#E8A3FF"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="聊天"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/button_userinfo_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/icon_arrow_left" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_userinfo_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_userinfo_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview_userinfo_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/userinfo_1" />
+
+                <TextView
+                    android:id="@+id/textview_userinfo_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="正在卖"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#D9D9D9" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_userinfo_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview_userinfo_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/userinfo_2" />
+
+                <TextView
+                    android:id="@+id/textview_userinfo_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="正在求"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_userinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <include layout="@layout/view_frame_loading" />
+
+</FrameLayout>

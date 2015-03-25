@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/yidian_erhuo/UILApplication.java=GBK
+encoding//src/com/yidian_erhuo/activity/ActivityAbout.java=GBK
+encoding//src/com/yidian_erhuo/activity/ActivityEditNickName.java=GBK
+encoding//src/com/yidian_erhuo/cloud/CloudAPI.java=GBK
+encoding//src/com/yidian_erhuo/pullToRefresh=UTF-8
+encoding//src/com/yidian_erhuo/pullToRefresh/RotateLoadingLayout.java=UTF-8
+encoding//src/com/yidian_erhuo/utile/Utile.java=UTF-8
+separateDerivedEncodings=true

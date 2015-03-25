@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <ImageButton
+                android:id="@+id/imagebutton_row_buy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textview_row_buy_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_row_buy_timetemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#807f7f"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_row_buy_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E8A3FF"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="聊天"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_row_buy_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="#787878"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/textview_row_buy_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_price"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:textColor="#AD57CB"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_row_buy_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/icon_share" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="#D9D9D9" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#F8F8F8" />
+
+</LinearLayout>
