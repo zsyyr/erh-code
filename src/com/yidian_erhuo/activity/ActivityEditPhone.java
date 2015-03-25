@@ -18,13 +18,13 @@ public class ActivityEditPhone extends ActivityBase {
 	public void initView() {
 		setContentView(R.layout.activity_edit_phone);
 
-		// ½ÓÊÕ´«µİ¹ıÀ´µÄÔ­Ê¼ÃÜÂë
+		// æ¥æ”¶ä¼ é€’è¿‡æ¥çš„åŸå§‹å¯†ç 
 		str_phone_old = getIntent().getStringExtra("phone");
 
 		titleView = new TitleView(this);
 		titleView.LeftButton(R.drawable.icon_arrow_left, 0);
-		titleView.RightTextView("È·¶¨", 0);
-		titleView.MidTextView("ÊÖ»úºÅ", 0);
+		titleView.RightTextView("ç¡®å®š", 0);
+		titleView.MidTextView("æ‰‹æœºå·", 0);
 
 		editText_phone = (EditText) findViewById(R.id.edittext_edit_phone);
 		if (str_phone_old != null) {
@@ -49,7 +49,7 @@ public class ActivityEditPhone extends ActivityBase {
 				setResult(ActivityPersonalCenter.EDIT_DATA, data);
 				finish();
 			} else {
-				Toast.makeText(ActivityEditPhone.this, "ÊÖ»úºÅ²»ÄÜÎª¿Õ",
+				Toast.makeText(ActivityEditPhone.this, "æ‰‹æœºå·ä¸èƒ½ä¸ºç©º",
 						Toast.LENGTH_SHORT).show();
 			}
 			break;
